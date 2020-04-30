@@ -1,0 +1,24 @@
+.login-container{
+  background: url(../../../assets/img/bg-role.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+.btn-login {
+  width:100%;
+}
