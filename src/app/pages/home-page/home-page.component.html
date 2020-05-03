@@ -1,2 +1,12 @@
-<p>home-page works!</p>
-<button (click) ="allProducts()">Products</button>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of products">
+      <div class="card">
+          <div class="card-body">
+            <p>{{product.name}}</p>
+            <p>{{product.price}}</p>
+            <p>{{product.type}}</p>
+            <img [src]=product.image alt="product" width="20px">
+          </div>
+      </div>
+  </div>
+</div>
