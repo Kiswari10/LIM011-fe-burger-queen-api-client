@@ -23,15 +23,17 @@ export class LoginPageComponent implements OnInit {
   }
 
   login() {
+    console.log('datos del user', this.user)
     this.authService.login(this.user)
       .subscribe(
         res => {
           localStorage.setItem('token', res.token);
-          this.router.navigate(['/home'])
           console.log('respuesta', res)
+          this.router.navigate(['/home'])
         },
         err => {
           console.log('error', err)
+          console.log('datos user', this.user)
         }
       )
   }
