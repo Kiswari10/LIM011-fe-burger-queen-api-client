@@ -1,0 +1,18 @@
+<div class="card text-center">
+  <div class="card-header bg-warning">
+    <ul class="nav nav-tabs card-header-tabs flex">
+      <li class="nav-item">
+        <a class="nav-link active" [ngClass]="{'active': activeBreakfast}" (click)="showBreakfast()">Desayuno</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="{'active': activeLunchDinner}" (click)="showLunchDinner()">Almuerzo y cena</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body" *ngIf="breakfast">
+    <app-breakfast></app-breakfast>
+  </div>
+  <div class="card-body" *ngIf="lunchDinner">
+    <app-lunch-dinner></app-lunch-dinner>
+  </div>
+</div><br><br><br>

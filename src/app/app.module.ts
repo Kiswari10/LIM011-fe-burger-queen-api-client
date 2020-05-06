@@ -9,12 +9,20 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor/token-interceptor.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { LunchDinnerComponent } from './components/lunch-dinner/lunch-dinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    NavbarComponent,
+    MenuComponent,
+    BreakfastComponent,
+    LunchDinnerComponent
   ],
   imports: [
     BrowserModule,
