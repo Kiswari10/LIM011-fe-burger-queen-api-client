@@ -3,10 +3,6 @@
   font-weight: bold;
   font-size: 2rem;
 }
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
 .pointer{
   cursor: pointer;
 }

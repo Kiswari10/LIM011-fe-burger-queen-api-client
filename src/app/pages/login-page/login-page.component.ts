@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class LoginPageComponent implements OnInit {
 
+  message: boolean = false
+
   user = {
     email: '',
     password:''
@@ -32,6 +34,7 @@ export class LoginPageComponent implements OnInit {
           this.router.navigate(['/home'])
         },
         err => {
+          this.message = true
           console.log('error', err)
         }
       )

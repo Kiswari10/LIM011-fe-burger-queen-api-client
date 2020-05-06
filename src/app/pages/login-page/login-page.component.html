@@ -9,8 +9,8 @@
     <div class="form-group">
       <input type="password" class="form-control" [(ngModel)] = "user.password" name="password" placeholder="password" required>
     </div>
-    <div class="form-group" *ngIf="false">
-      <p>Correo o contraseña incorrectos</p>
+    <div class="form-group" *ngIf="message">
+      <p class="msg-error">Correo o contraseña incorrectos</p>
     </div>
     <button class="btn btn-warning btn-login">Login</button>
 </form>
