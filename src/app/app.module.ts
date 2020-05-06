@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { LunchDinnerComponent } from './components/lunch-dinner/lunch-dinner.component';
+import { NewOrderComponent } from './components/new-order/new-order.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LunchDinnerComponent } from './components/lunch-dinner/lunch-dinner.com
     NavbarComponent,
     MenuComponent,
     BreakfastComponent,
-    LunchDinnerComponent
+    LunchDinnerComponent,
+    NewOrderComponent
   ],
   imports: [
     BrowserModule,
