@@ -33,7 +33,6 @@ export class LoginPageComponent implements OnInit {
         },
         err => {
           console.log('error', err)
-          console.log('datos user', this.user)
         }
       )
   }
